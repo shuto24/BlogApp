@@ -8,6 +8,9 @@
         <%= post.title %>
       </div>
       <div class="content__right__bottom">
+        <div class="content__right__bottom--userName">
+          <%= post.user.nickname %>
+        </div>
         <div class="content__right__bottom--date">
           <%= post.created_at %>
         </div>
