@@ -12,13 +12,13 @@
     </div>
     <div class='header__box__nav'>
       <ul class='header__box__nav__listleft'>
-        <li class="header__box__nav__listleft__categories">カテゴリ</li>
-        <li class="header__box__nav__listleft__categories">ブランド</li>
+        <%= link_to "おすすめ", "#", class: "header__box__nav__listleft__categories"%>
+        <%= link_to "カテゴリー", "#", class: "header__box__nav__listleft__categories"%>
       </ul>
       <ul class="header__box__nav__listright">
         <% if user_signed_in? %>
           <%= link_to "新規投稿", new_post_path, class: "header__box__nav__listright__login" %>
-          <%= link_to "マイページ",users_path(current_user.id), class: "content__right__bottom--userName--btn" %>
+          <%= link_to "マイページ",users_path(current_user.id), class: "header__box__nav__listright__login" %>
         <% else %>
           <%= link_to "ログイン", "#", class: "header__box__nav__listright__login" %>
           <%= link_to "新規会員登録", "#", class: "header__box__nav__listright__new" %>

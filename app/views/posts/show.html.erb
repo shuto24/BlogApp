@@ -1,8 +1,19 @@
 <div class="contents">
   <div class="postTitle">
-    <%= @user.nickname %>さんの投稿一覧
+    <%= @post.title %>
   </div>
-  <% @posts.each do |post| %>
-    <%= render partial: "posts/post", locals: { post: post } %>
+  <div class="postDate">
+    <%= @post.created_at %>
+  </div>
+  <div class="postAuthor">
+  </div>
+  <% if user_signed_in? && current_user.id == @post.user_id %>
+    <div class="postManage">
+      <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>
+      <%= link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete" %>
+    </div>
   <% end %>
+  <div class="postText">
+    <%= simple_format @post.content %>
+  </div>
 </div>
