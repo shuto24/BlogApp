@@ -55,13 +55,12 @@
       align-items: center;
       &__listleft {
         display: flex;
-        width: 30%;
+        padding-inline-start: 0;
         &__categories {
           @include hoge ();
         }
         &__brand {
           @include hoge ();
-          padding-left: 30px;
         }
       }
       &__listright {
@@ -71,7 +70,6 @@
         }
         &__new {
           @include hoge ();
-          padding-left: 30px;
         }
       }
     }
@@ -81,7 +79,6 @@
 .contents{
   margin: 30px auto 0;
   background-color: #fff;
-  height: 600px;
   width: 70%;
   .content{
     padding: 10px;
