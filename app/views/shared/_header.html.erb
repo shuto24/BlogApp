@@ -2,7 +2,7 @@
   <div class='header__box'>
     <div class='header__box__main'>
       <div class='header__box__main__icon'>
-        <b>Blog</b>
+        <%= link_to "Blog", "/", class: "header__box__main__icon__app-name"%>
       </div>
       <div class='header__box__main__searchbox'>
         <%= form_with url: "#", class:"header__box__main__searchbox__form" do |f| %>
