@@ -16,7 +16,7 @@ Overview
 [![Image from Gyazo](https://i.gyazo.com/ec79e5da08ed26be14709637730da40a.gif)](https://gyazo.com/ec79e5da08ed26be14709637730da40a)
 
 ## Usage
-https://floating-garden-29395.herokuapp.com　
+https://floating-garden-29395.herokuapp.com/
 を開いて投稿一覧を確認することができます。
 headerの新規会員登録から登録していただいて新規投稿からブログの投稿ができます。
 headerの左上Blogを押すとrootに戻れます。
