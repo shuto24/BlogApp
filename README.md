@@ -29,7 +29,7 @@ BlogApp
 
 
 ## 使用方法
-  # テストアカウント    email  test@test  password   000000  こちらからログインできます。
+ テストアカウント    email  test@test  password   000000  こちらからログインできます。
   https://floating-garden-29395.herokuapp.com/
   を開いて投稿一覧を確認することができます。
   headerの新規会員登録から登録していただいて新規投稿からブログの投稿ができます。
