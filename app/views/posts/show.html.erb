@@ -19,7 +19,7 @@
   </div>
   <div class="container">
     <% if current_user %>
-      <%= form_with(model: [@post, @comment], local: true) do |form| %>
+      <%= form_with(model: [@post, @comment], local: true, id: "new_comment") do |form| %>
         <%= form.text_area :text, placeholder: "コメントする", rows: "2", class: "comment-box" %>
         <%= form.submit "送信", class: :send__btn %>
       <% end %>
@@ -40,3 +40,5 @@
     </div>
   </div>
 </div>
+
+
